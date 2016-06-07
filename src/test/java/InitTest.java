@@ -3,10 +3,22 @@
  */
 
 import org.junit.Test;
-public class InitTest {
+
+public class InitTest extends BaseTest {
+
+
+
 
     @Test
     public void showMessage(){
         System.out.println("Hello World!");
     }
+
+    @Test
+    public void openBrowser(){
+        driver.get("http://google.com");
+    }
+
+
+
 }
