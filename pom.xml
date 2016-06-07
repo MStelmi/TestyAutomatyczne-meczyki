@@ -8,5 +8,37 @@
     <artifactId>testmeczyki</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <properties>
+        <selenium.groupId>org.seleniumhq.selenium</selenium.groupId>
+        <selenium.version>2.52.0</selenium.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>${selenium.groupId}</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>${selenium.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+        </dependency>
+        <dependency>
+            <groupId>${selenium.groupId}</groupId>
+            <artifactId>selenium-support</artifactId>
+            <version>${selenium.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>RELEASE</version>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
+
+
+
 
 </project>
